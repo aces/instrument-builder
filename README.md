@@ -86,7 +86,7 @@ Within LORIS we have many React components that can be used throughout the diffe
 **2. instrument-builder specific JSX files**
 
 React components that are designed for this specific instrument_builder module should have its `JSX` file placed in the
-`module/instrument_builder/jsx/` and its compiled file in the `module/instrument_builder/js/` directory.
+`module/jsx/` directory and its compiled file in the `module/js/` directory.
 
 
 >**Note**: When creating a new JSX file **always** use the `.js` extension or the continuous compilation will not work as expected. The file name of the `JSX` and its compiled file should have the same name.
