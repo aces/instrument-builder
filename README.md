@@ -8,30 +8,6 @@ The React components will include LORIS Core React elements living in the jsx/ d
 
 ---
 
-## Coding Guidelines
-- All new React components and major updates to existing React components should follow `ES6 standard`
-- All new and existing Javascript code should pass `ESLint` validation
-- All new components should be compiled using `webpack`
-- All new modules and major module updates should use a single javascript entry-point `index.js` and rely on ES6 modules to include additional components
-
----
-
-## File Structure
-
-**1. Generic `JSX` files (Loris Core)**
-
-Within LORIS we have many React components that can be used throughout the different modules. When adding a new generic file, the `JSX` file should be placed in the `jsx/` directory and its compiled file in the `htdocs/js/components` directory.
-
-**2. instrument-builder specific JSX files**
-
-React components that are designed for this specific instrument_builder module should have its `JSX` file placed in the
-`module/instrument_builder/jsx/` and its compiled file in the `module/instrument_builder/js/` directory.
-
-
->**Note**: When creating a new JSX file **always** use the `.js` extension or the continuous compilation will not work as expected. The file name of the `JSX` and its compiled file should have the same name.
-
----
-
 ## Set up
 
 In order to use `webpack`, we need to install `Node.js`, `NPM` and additional dependencies.
@@ -60,7 +36,6 @@ curl -sL https://deb.nodesource.com/setup_4.x | sudo -E bash -
 sudo apt-get install -y nodejs
 sudo apt-get install -y build-essential
 ```
-
 
 **CentOS**
 
@@ -102,6 +77,22 @@ sudo chown -R $USER:$(id -gn $USER) ./node_modules
 
 ---
 
+## File Structure
+
+**1. Generic `JSX` files (Loris Core)**
+
+Within LORIS we have many React components that can be used throughout the different modules. When adding a new generic file, the `JSX` file should be placed in the `jsx/` directory and its compiled file in the `htdocs/js/components` directory.
+
+**2. instrument-builder specific JSX files**
+
+React components that are designed for this specific instrument_builder module should have its `JSX` file placed in the
+`module/instrument_builder/jsx/` and its compiled file in the `module/instrument_builder/js/` directory.
+
+
+>**Note**: When creating a new JSX file **always** use the `.js` extension or the continuous compilation will not work as expected. The file name of the `JSX` and its compiled file should have the same name.
+
+---
+
 ## Transpiling React code
 
 We need to use `webpack` in order to transpile `JSX` and `ES6` syntax used in our React code into `ES5` syntax understood by all browsers.
@@ -140,5 +131,13 @@ which is a short-cut for:
 ```
 ./node_modules/.bin/webpack --watch
 ```
+
+---
+
+## Coding Guidelines
+- All new React components and major updates to existing React components should follow `ES6 standard`
+- All new and existing Javascript code should pass `ESLint` validation
+- All new components should be compiled using `webpack`
+- All new modules and major module updates should use a single javascript entry-point `index.js` and rely on ES6 modules to include additional components
 
 ---
