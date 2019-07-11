@@ -196,7 +196,6 @@ class AddListItemForm extends Component {
           label='Field options:'
         />
         {this.renderFieldOptions()}
-        // Call this method to render the field options portion of the form
         <CheckboxElement
           name='multipleChoice'
           label='Allow multiple values'
