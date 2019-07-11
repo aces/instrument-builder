@@ -11,6 +11,7 @@ const config = [{
     './htdocs/js/components/Breadcrumbs.js': './jsx/Breadcrumbs.js',
     './htdocs/js/components/Form.js': './jsx/Form.js',
     './htdocs/js/components/Markdown.js': './jsx/Markdown.js',
+    './module/js/index.js': './module/jsx/index.js',
   },
   output: {
     path: __dirname + '/',
