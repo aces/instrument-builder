@@ -1,27 +1,25 @@
 <!DOCTYPE  html>
 <html style="height:100%; background:transparent">
   <head>
-        <link rel="stylesheet" href="{$baseurl}/{$css}" type="text/css" />
-        <link rel="stylesheet" href="{$baseurl}/fontawesome/css/all.css" type="text/css" />
-        <link type="image/x-icon" rel="icon" href="/images/favicon.ico">
-
+        <link rel="stylesheet" href="htdocs/fontawesome/css/all.css" type="text/css" />
+        <link rel="stylesheet" href="htdocs/bootstrap/css/bootstrap.min.css" type="text/css" />
+        <link rel="stylesheet" href="htdocs/bootstrap/css/custom-css.css" type="text/css" />
+        <link rel="stylesheet" href="htdocs/vendor/sweetalert/sweetalert.css" type="text/css" />
         <script language="javascript" type="text/javascript">
         </script>
-        {section name=jsfile loop=$jsfiles}
-            <script src="{$jsfiles[jsfile]}" type="text/javascript"></script>
-        {/section}
-
-        {section name=cssfile loop=$cssfiles}
-            <link rel="stylesheet" href="{$cssfiles[cssfile]}">
-        {/section}
-
-        <link type="text/css" href="{$baseurl}/css/jqueryslidemenu.css" rel="Stylesheet" />
-        <link href="{$baseurl}/css/simple-sidebar.css" rel="stylesheet">
+        <link type="text/css" href="htdocs/css/jqueryslidemenu.css" rel="Stylesheet" />
+        <link href="htdocs/css/simple-sidebar.css" rel="stylesheet">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
   </head>
   <body>
     <div id='workspace'>
 
     </div>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+
+    <!-- Load our React component. -->
+    <script src="./module/js/index.js"></script>
+    <script src="./htdocs/js/components/Form.js"></script>
   </body>
 </html>
