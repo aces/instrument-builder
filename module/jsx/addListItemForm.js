@@ -195,7 +195,8 @@ class AddListItemForm extends Component {
         <StaticElement
           label='Field options:'
         />
-        {this.renderFieldOptions()}   // Call this method to render the field options portion of the form
+        {this.renderFieldOptions()}
+        // Call this method to render the field options portion of the form
         <CheckboxElement
           name='multipleChoice'
           label='Allow multiple values'
