@@ -1,0 +1,27 @@
+<!DOCTYPE  html>
+<html style="height:100%; background:transparent">
+  <head>
+        <link rel="stylesheet" href="{$baseurl}/{$css}" type="text/css" />
+        <link rel="stylesheet" href="{$baseurl}/fontawesome/css/all.css" type="text/css" />
+        <link type="image/x-icon" rel="icon" href="/images/favicon.ico">
+
+        <script language="javascript" type="text/javascript">
+        </script>
+        {section name=jsfile loop=$jsfiles}
+            <script src="{$jsfiles[jsfile]}" type="text/javascript"></script>
+        {/section}
+
+        {section name=cssfile loop=$cssfiles}
+            <link rel="stylesheet" href="{$cssfiles[cssfile]}">
+        {/section}
+
+        <link type="text/css" href="{$baseurl}/css/jqueryslidemenu.css" rel="Stylesheet" />
+        <link href="{$baseurl}/css/simple-sidebar.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  </head>
+  <body>
+    <div id='workspace'>
+
+    </div>
+  </body>
+</html>
