@@ -1,5 +1,4 @@
 // Import libraries
-    let formData = Object.assign({}, this.props.formData);
 import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 
